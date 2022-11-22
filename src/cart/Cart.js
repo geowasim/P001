@@ -92,7 +92,7 @@ const Basket = (props) => {
     setChange(value <= 0 ? (value * -1).toFixed(2) : "");
   };
 
-  const [serialNumber, setSerialNumber] = useState(null);
+  const [serialNumber, setSerialNumber] = useState(null || 1000);
 
   //get lastSn //
   //get data frm const {second} = first
