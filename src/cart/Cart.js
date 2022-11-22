@@ -92,13 +92,13 @@ const Basket = (props) => {
     setChange(value <= 0 ? (value * -1).toFixed(2) : "");
   };
 
-  const [serialNumber, setSerialNumber] = useState(null || 1000);
+  const [serialNumber, setSerialNumber] = useState(null);
 
   //get lastSn //
   //get data frm const {second} = first
   // Read todo from firebase
   useEffect(() => {
-    const q = query(collection(db, "pos002"), orderBy("invoiceNumber", "desc"));
+    const q = query(collection(db, "pos001"), orderBy("invoiceNumber", "desc"));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
       let todosArr = [];
       querySnapshot.forEach((doc) => {
