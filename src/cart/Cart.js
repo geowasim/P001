@@ -178,7 +178,8 @@ const Basket = (props) => {
                 </button>
               </div>
               <div className="basketQT">
-                {item.qty} X {Number(item.price) * 0.15 + Number(item.price)}
+                {item.qty} X{" "}
+                {(Number(item.price) * 0.15 + Number(item.price)).toFixed(2)}
               </div>
             </div>
           ))}
@@ -226,7 +227,7 @@ const Basket = (props) => {
                 }}
               >
                 <span> ر.س</span>{" "}
-                {priceBeforeDiscount * 0.15 + priceBeforeDiscount}
+                {(priceBeforeDiscount * 0.15 + priceBeforeDiscount).toFixed(2)}
               </div>
               <div
                 style={{
@@ -340,7 +341,7 @@ const Basket = (props) => {
         <div className="copyRights">
           <p>
             {" "}
-            Copyright <span>&copy;</span> reserved for Alnathra Al-Raqiqa -{" "}
+            Copyright <span>&copy;</span> Tahween 4 Business Services{" "}
             {new Date().getFullYear()}
           </p>
         </div>

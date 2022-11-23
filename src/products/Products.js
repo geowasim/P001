@@ -31,6 +31,8 @@ const Products = (props) => {
             </div>
           ))}
         </div>
+        <br />
+        <p>pos001</p>
       </div>
     </>
   );
