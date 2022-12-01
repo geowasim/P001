@@ -55,7 +55,7 @@ function App() {
               <ProtectedRoute>
                 {/* <Invoices
                 /> */}
-                // readDataFromInvoiceComponent={readDataFromInvoiceComponent}
+                loading...{" "}
               </ProtectedRoute>
             }
           />
